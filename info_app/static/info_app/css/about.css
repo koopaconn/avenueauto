@@ -1,0 +1,20 @@
+.col-md-4 img{
+  display: flex;
+  height: 200px;
+  width: 250px;
+  margin: auto;
+}
+
+#mech{
+  text-align: center;
+}
+
+iframe{
+  border:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.jumbotron{
+  border: 5px solid #0B1B32;
+}
