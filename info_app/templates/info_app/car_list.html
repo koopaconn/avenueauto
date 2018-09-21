@@ -16,7 +16,9 @@ Cars
   <h1>Available Cars</h1>
   <div class="text-center">
     {% for car in car_list %}
-    <a href="{{car.id}}/"><img data-toggle="tooltip" title="{{car.model}} {{car.make}}" src="{{car.headpic.url}}" class="img-fluid pull-xs-left" alt="No Image"></a>
+    <a data-toggle="tooltip" title="{{car.model}} {{car.make}}" data-offset=80,40 href="{{car.id}}/">
+      <img data-toggle="tooltip" title="{{car.model}} {{car.make}}" src="{{car.headpic.url}}" class="img-fluid pull-xs-left" alt="No Image">
+    </a>
     {% endfor %}
   </div>
 </div>

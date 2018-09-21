@@ -36,7 +36,7 @@ Cars
 <div class="container">
   <div class="text-center">
     {% for carmedia in car_details.carpic.all %}
-      <a class="lightbox" href="#car">
+      <a class="lightbox" href="#carpiclight{{carmedia.id}}">
         <img class="center-block img-responsive" id='carpic{{carmedia.id}}' src="{{ carmedia.pic.url }}" alt="No Image">
       </a>
     {% endfor %}
@@ -44,7 +44,7 @@ Cars
 </div>
 
 {% for carmedia in car_details.carpic.all %}
-<div class="lightbox-target" id="car">
+<div class="lightbox-target" id="carpiclight{{carmedia.id}}">
   <img src="{{ carmedia.pic.url }}" alt="No Image">
   <a class="lightbox-close" href="#carpic{{carmedia.id}}"></a>
 </div>
