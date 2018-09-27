@@ -1,8 +1,9 @@
-.col-md-4 img{
+.col-md-3 img{
   display: flex;
   height: auto;
   width: inherit;
   margin: inherit;
+  border: 2px solid #0B1B32;
 }
 
 #mech{
@@ -18,16 +19,6 @@ iframe{
 .jumbotron{
   border: 5px solid #0B1B32;
 }
-
-/* #conall{
-  background: #717b88;
-  padding: 0.5%;
-  padding-top: 2%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-} */
 
 h3{
   border-bottom: 1px solid #144f67;
