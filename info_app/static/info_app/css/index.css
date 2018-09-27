@@ -10,5 +10,24 @@ div.jumbotron {
 }
 
 .lead{
-  font-size: 20px;
+  font-size: 1.75em;
+}
+
+#services li{
+  font-size: 1.25em;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+  overflow: hidden;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }

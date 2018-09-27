@@ -1,43 +1,52 @@
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
 .navbar-toggle.collapsed .icon-bar {
   color: white;
 }
 
-nav{
-  background-color:#0B1B32;
+nav {
+  background-color: #0B1B32;
 }
 
-footer p{
-  background-color:#0B1B32;
-  text-align: right;
-  color: white;
+.nav-link{
+  font-size: 1.5em;
+  padding: 0px;
+  margin: 0px;
+}
+
+.dropdown-menu p {
+  text-align: left;
+  color: black;
   margin: auto;
-  padding-right: 5px;
-  font-size: 70%;
-  margin-top: 6px;
+  margin-left: 20px;
+  font-size: 1em;
 }
 
-footer img{
-  width: 140px;
-  height: 150px;
-  margin-top: -33px;
-  vertical-align: middle;
+.dropdown-menu{
+    width: 350px !important;
 }
 
-#fblogo{
-  width: 50px;
-  height: 50px;
-  margin: auto;
-  margin-top: 13px;
+#fblogo img{
+  width: 3em;
+  height: 3em;
   display: block;
+  margin-left: 20px;
+  margin-top: 5%;
 }
 
-footer{
-  background: #0B1B32;
-  height: 75px;
-  overflow: hidden;
-  margin-top: 25px;
+#aalogo{
+  width: 15em;
+  border-radius: 10%;
+  margin-top: 6%;
 }
 
-*{
+* {
   font-family: 'Open Sans', sans-serif;
 }

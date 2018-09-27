@@ -1,8 +1,4 @@
-body {
-  position: relative;
-}
-
-ul{
+#cardetailspan ul{
   vertical-align: text-top;
   list-style-type:none;
   display: inline-block;
@@ -10,7 +6,7 @@ ul{
   zoom: 1;
 }
 
-li{
+#cardetailspan ul li{
   margin: 5px;
 }
 
