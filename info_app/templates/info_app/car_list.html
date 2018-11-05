@@ -15,17 +15,19 @@ Cars
 <div class="container" id='carlist'>
   {# <h1>Available Cars</h1> #}
   <div class="text-center">
+    <div class="row">
     {% for car in car_list %}
+    <div class="col-md-6">
     <a data-toggle="tooltip" title="{{car.model}} {{car.make}}" data-offset=80,40 href="{{car.id}}/">
       <img data-toggle="tooltip" title="{{car.model}} {{car.make}}" src="{{car.headpic.url}}" class="img-fluid pull-xs-left" alt="No Image">
-      <div class="text-block">
-        <h5>{{car.model}} {{car.make}}</h5>
-      </div>
+      <div class="bottom-left">{{car.year}} {{car.make}} {{car.model}}</div>
     </a>
+    </div>
     {% endfor %}
+    </div>
   </div>
 </div>
 
-<script type="text/javascript" src='{% static '/info_app/js/car_list.js' %}'></script>
+<!-- <script type="text/javascript" src='{% static '/info_app/js/car_list.js' %}'></script> -->
 
 {% endblock %}

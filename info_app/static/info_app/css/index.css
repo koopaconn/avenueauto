@@ -1,33 +1,98 @@
-body {
-   background-image: url("/static/info_app/images/building.jpg");
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: cover;
+.buildingcon {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden;
 }
 
-div.jumbotron {
-  background-color: rgba(255, 255, 255, 0.85);
+.containermobile {
+    position: relative;
+    color: white;
+    overflow: hidden;
+    background: blue;
+    padding: 10px;
+    height: 400px;
 }
 
-.lead{
-  font-size: 1.75em;
+.text-block {
+    position: absolute;
+    bottom: 40%;
+    right: 20px;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.5em;
+    color: white;
 }
 
-#services li{
-  font-size: 1.25em;
+.text-block p {
+  text-align: right;
+  color: white;
 }
 
-/* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 5px;
-  overflow: hidden;
+.text-block a {
+  color: white;
 }
 
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+#fbindex {
+  height: 3em;
+  margin-top: 10px;
+  right: 0;
+}
+
+
+.col-md {
+  overflow:hidden;
+  padding: 10px;
+  height: 350px;
+  text-align: center;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 4em;
+  margin: 0;
+  padding: 0;
+}
+
+.col-md img {
+  width: 100%;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    background: rgba(0,0,0,0.6);
+    padding: 10px;
+}
+
+@media only screen
+and (max-device-width: 768px)
+{
+  .col-md img {
+    height: 100%;
+    width: auto;
+  }
+  #fbindex {
+    height: 3em;
+    margin-top: 10px;
+    right: 0;
+  }
+  .containermobile {
+      position: relative;
+      color: white;
+      overflow: hidden;
+      background: blue;
+      padding: 10px;
+      height: 400px;
+      background-color: rgba(0,0,0,0.6);
+      color: white;
+      font-size: 1.5em;
+      color: white;
+      justify-content: center;
+      padding-top: 75px;
+  }
+  .containermobile a {
+      color: white;
+  }
 }

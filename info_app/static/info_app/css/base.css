@@ -41,10 +41,32 @@ nav {
   margin-top: 5%;
 }
 
-#aalogo{
-  width: 15em;
-  border-radius: 10%;
-  margin-top: 6%;
+#aalogo img{
+  width: inherit;
+}
+
+#aalogo {
+  width: 30em;
+}
+
+.footer {
+  color: rgba(211,211,211,0.6);
+  font-weight: bold;
+  background: #7b3a20;
+  width: 100%;
+  font-size: 90%;
+  margin-top: 20px;
+  z-index: 100000 !important;
+  position: relative;
+  bottom: 0px;
+}
+
+@media only screen
+and (max-device-width: 768px)
+{
+  #aalogo {
+    width: 95%;
+  }
 }
 
 * {

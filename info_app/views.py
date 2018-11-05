@@ -6,18 +6,18 @@ from django.views.generic import (View,TemplateView,ListView,DetailView)
 
 # Create your views here.
 class IndexView(TemplateView):
-    # Just set this Class Object Attribute to the template page.
-    # template_name = 'app_name/site.html'
     template_name = 'index.html'
 
+class view_repairs(TemplateView):
+    template_name = 'info_app/repairs.html'
+
+class view_tires(TemplateView):
+    template_name = 'info_app/tires.html'
+
 class view_about(TemplateView):
-    # Just set this Class Object Attribute to the template page.
-    # template_name = 'app_name/site.html'
     template_name = 'info_app/about.html'
 
 class view_signup(TemplateView):
-    # Just set this Class Object Attribute to the template page.
-    # template_name = 'app_name/site.html'
     template_name = 'info_app/signup.html'
 
 class view_carslist(ListView):

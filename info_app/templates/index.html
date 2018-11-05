@@ -10,22 +10,43 @@ Home
 {% endblock %}
 
 {% block body_block %}
-<div class="container">
-<div class="jumbotron">
-  <h1 class="display-5">Heading</h1>
-  <br>
-  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-</div>
-<div class="jumbotron">
-  <h2><strong>We specilize in the following services!</strong></h2>
-  <br>
-  <ul id="services">
-    <li><a href="{% url 'info_app:carlist' %}">Car sales</a></li>
-    <li><a href="{% url 'info_app:about' %}">Repair</a></li>
-    <li><a href="{% url 'info_app:about' %}">Tire sales</a></li>
-    <li><a href="{% url 'info_app:about' %}">and more!</a></li>
-  </ul>
+
+<div class="containermobile">
+  <a href="https://www.facebook.com/St.JoeAvenueAutoSales/" target="_blank">
+  <img class="center-block img-responsive" src="{% static 'info_app/images/Facebook_logo.png' %}" alt="No image" id="fbindex"></a>
+  <div class="dropdown-divider"></div>
+  <p><a href="http://maps.google.com/?q=1200 4202 St Joseph Ave, St Joseph, MO 64505" target="_blank">4202 St Joseph Ave<br> St Joseph, MO 64505</a> <br>
+  Monday-Friday 8AM-5PM <br>
+  <a href="tel:+18162322710">(816) 232-2710</a></p>
 </div>
 
+<div class="buildingcon">
+  <img src="{% static 'info_app/images/building.jpg' %}" alt="" style="width:100%">
+  <div class="text-block">
+    <a href="https://www.facebook.com/St.JoeAvenueAutoSales/" target="_blank">
+    <img class="center-block img-responsive" src="{% static 'info_app/images/Facebook_logo.png' %}" alt="No image" id="fbindex"></a>
+    <div class="dropdown-divider"></div>
+    <p><a href="http://maps.google.com/?q=1200 4202 St Joseph Ave, St Joseph, MO 64505" target="_blank">4202 St Joseph Ave, St Joseph, MO 64505</a> <br>
+    Monday-Friday 8AM-5PM <br>
+    <a href="tel:+18162322710">(816) 232-2710</a></p>
+  </div>
 </div>
+
+<div class="row">
+  <div class="col-md">
+    <a href="{% url 'info_app:repairs' %}"><img src="{% static 'info_app/images/mechanics.jpg' %}" alt=""></a>
+    <div class="bottom-left">Repairs</div>
+  </div>
+  <div class="col-md">
+    <a href="{% url 'info_app:tires' %}"><img src="{% static 'info_app/images/tires.jpg' %}" alt=""></a>
+    <div class="bottom-left">Tires</div>
+  </div>
+  <div class="col-md">
+    <a href="{% url 'info_app:carlist' %}"><img src="{% static 'info_app/images/cars.jpg' %}" alt=""></a>
+    <div class="bottom-left">Inventory</div>
+  </div>
+</div>
+
+<script type="text/javascript" src="{% static '/info_app/js/index.js' %}"></script>
+
 {% endblock %}
