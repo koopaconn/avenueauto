@@ -1,22 +1,19 @@
-.text-center a{
-    position: relative;
-    text-align: center;
-    color: white;
-}
-
-a .img-fluid{
+a .w3-image{
   margin: 10px;
   width: 100%;
   height: auto;
   border: 5px solid #0B1B32;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.bottom-left {
+.w3-display-bottomleft {
     position: absolute;
-    top: 450%;
-    left: 16px;
+    bottom: 20px;
+    left: 35px;
     background: rgba(0,0,0,0.8);
     padding: 10px;
+    color: white;
 }
 
 #carlist{

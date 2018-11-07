@@ -1,3 +1,7 @@
+.jumbotron {
+  margin-top: 20px;
+}
+
 #cardetailspan ul{
   vertical-align: text-top;
   list-style-type:none;
@@ -17,7 +21,19 @@ a.lightbox img {
   border: 2px solid #0B1B32;
 }
 
+@media only screen
+and (max-width: 760px)
+{
+  a.lightbox img {
+    margin: 15px;
+    width: 80%;
+    height: 80%;
+    border: 2px solid #0B1B32;
+  }
+}
+
 .lightbox-target {
+  z-index: 100001 !important;
   position: fixed;
   top: -100%;
   width: 100%;

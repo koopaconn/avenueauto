@@ -12,6 +12,7 @@
     background: blue;
     padding: 10px;
     height: 400px;
+    display: none;
 }
 
 .text-block {
@@ -67,7 +68,32 @@
 }
 
 @media only screen
-and (max-device-width: 768px)
+and (max-width: 1650px)
+{
+  .col-md img {
+    height: 100%;
+    width: auto;
+  }
+}
+
+@media only screen
+and (max-width: 1000px)
+{
+  .text-block {
+      position: absolute;
+      bottom: 5%;
+      right: 20px;
+      background-color: rgba(0,0,0,0.6);
+      color: white;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 1em;
+      color: white;
+  }
+}
+
+@media only screen
+and (max-width: 760px)
 {
   .col-md img {
     height: 100%;
@@ -91,8 +117,13 @@ and (max-device-width: 768px)
       color: white;
       justify-content: center;
       padding-top: 75px;
+      display: flex;
   }
   .containermobile a {
       color: white;
+      margin-right: 10px;
+  }
+  .buildingcon {
+    display: none;
   }
 }

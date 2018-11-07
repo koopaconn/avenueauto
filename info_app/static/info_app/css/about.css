@@ -18,8 +18,17 @@ iframe{
 
 .jumbotron{
   border: 5px solid #0B1B32;
+  margin-top: 20px;
 }
 
 h3{
   border-bottom: 1px solid #144f67;
+}
+
+@media only screen
+and (max-width: 760px)
+{
+  #serviceimg {
+    display: none;
+  }
 }

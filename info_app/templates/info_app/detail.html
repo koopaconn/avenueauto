@@ -2,7 +2,7 @@
 {% load staticfiles %}
 
 {% block title_block %}
-Cars
+Avenue Auto - Inventory
 {% endblock %}
 
 {% block style_block %}
@@ -36,9 +36,7 @@ Cars
 <div class="container">
   <div class="text-center">
     {% for carmedia in car_details.carpic.all %}
-      <a class="lightbox" href="#carpiclight{{carmedia.id}}">
-        <img class="center-block img-responsive" id='carpic{{carmedia.id}}' src="{{ carmedia.pic.url }}" alt="No Image">
-      </a>
+      <a class="lightbox" href="#carpiclight{{carmedia.id}}"><img class="center-block img-responsive w3-hover-opacity" id='carpic{{carmedia.id}}' src="{{ carmedia.pic.url }}" alt="No Image"></a>
     {% endfor %}
   </div>
 </div>

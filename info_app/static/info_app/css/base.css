@@ -12,6 +12,7 @@ html,body {
 }
 
 nav {
+  /* background-color: #465362; */
   background-color: #0B1B32;
 }
 
@@ -50,22 +51,45 @@ nav {
 }
 
 .footer {
-  color: rgba(211,211,211,0.6);
+  color: lightgrey;
   font-weight: bold;
-  background: #7b3a20;
+  background: #0B1B32;
   width: 100%;
   font-size: 90%;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   z-index: 100000 !important;
   position: relative;
   bottom: 0px;
+  padding-bottom: 10px;
+}
+
+.footer td {
+  padding: 10px;
+}
+
+.footer a {
+  color: lightgrey;
+}
+
+td img {
+  width: 100px;
+  height: auto;
 }
 
 @media only screen
-and (max-device-width: 768px)
+and (max-width: 760px)
 {
   #aalogo {
     width: 95%;
+  }
+  table tr > *{
+      display: block;
+  }
+  table tr {
+      display: table-cell;
+  }
+  .dropdown-menu{
+      width: 100% !important;
   }
 }
 
