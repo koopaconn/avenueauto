@@ -1,38 +1,22 @@
-.lead {
+.custlead {
   font-weight: bold;
-  padding: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 1.2em;
 }
 
-.row {
-  background: #0B1B32;
-  border-radius: 5%;
+h3 {
+  font-weight: bold;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.col-md {
-  overflow:hidden;
-  padding: 10px;
-  height: 350px;
-  text-align: center;
-  color: black;
-  margin: 0;
-  padding: 0;
-  border-radius: 5%;
-  background:	#DCDCDC;
+#warranty {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.col-md h1 {
-  margin-top: 90px;
-  /* text-shadow: 3px 3px 7px grey; */
-  border-bottom: 1px solid black;
-  font-size: 4em;
-  margin-right: 10%;
-  margin-left: 10%;
-}
-
-.col-md img {
-  width: 100%;
-  height: 100%;
-}
 
 .container .lead {
   margin-top: 20px;
@@ -44,15 +28,16 @@ h2 {
   margin-top: 20px;
 }
 
-#repairlist {
-  padding-bottom: 30px;
-  font-size: 1.25em;
+.col-md-3 img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 @media only screen
 and (max-width: 768px)
 {
-  .col-md h1 {
-    font-size: 3em;
+  .col-6 h2 {
+    font-size: 1.7em
   }
 }

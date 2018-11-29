@@ -26,6 +26,14 @@ h3{
 }
 
 @media only screen
+and (max-width: 1050px)
+{
+  h3 {
+    font-size: 1.5em;
+  }
+}
+
+@media only screen
 and (max-width: 760px)
 {
   #serviceimg {

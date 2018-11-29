@@ -17,7 +17,7 @@ Avenue Auto - Inventory
     {# <h1>Available Cars</h1> #}
       <div class="row">
       {% for car in car_list %}
-      <div class="col-md-6">
+      <div class="col-md-4">
       <a href="{{car.id}}/" >
         <img src="{{car.headpic.url}}" class="w3-image w3-hover-opacity" alt="No Image">
         <div class="w3-display-bottomleft w3-container">{{car.year}} {{car.make}} {{car.model}}</div>

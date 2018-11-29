@@ -3,9 +3,15 @@
     text-align: center;
     color: white;
     overflow: hidden;
+    height: 600px;
 }
 
-.containermobile {
+#buildimg {
+  width: 100%;
+  height: auto;
+}
+
+/* .containermobile {
     position: relative;
     color: white;
     overflow: hidden;
@@ -13,7 +19,7 @@
     padding: 10px;
     height: 400px;
     display: none;
-}
+} */
 
 .text-block {
     position: absolute;
@@ -77,11 +83,26 @@ and (max-width: 1650px)
 }
 
 @media only screen
+and (max-width: 1596px)
+{
+  #buildimg {
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+  }
+}
+
+@media only screen
 and (max-width: 1000px)
 {
   .text-block {
       position: absolute;
-      bottom: 5%;
+      bottom: 35%;
       right: 20px;
       background-color: rgba(0,0,0,0.6);
       color: white;
@@ -89,6 +110,12 @@ and (max-width: 1000px)
       padding-right: 20px;
       font-size: 1em;
       color: white;
+  }
+  .bottom-left {
+    font-size: 0.6em;
+  }
+  .buildingcon {
+      height: 400px;
   }
 }
 
@@ -104,26 +131,33 @@ and (max-width: 760px)
     margin-top: 10px;
     right: 0;
   }
-  .containermobile {
-      position: relative;
-      color: white;
-      overflow: hidden;
-      background: blue;
-      padding: 10px;
-      height: 400px;
-      background-color: rgba(0,0,0,0.6);
-      color: white;
-      font-size: 1.3em;
-      color: white;
-      justify-content: center;
-      padding-top: 75px;
-      display: flex;
+  .text-block {
+    bottom: 10px;
+    left: 20px;
+    font-size: 0.84em;
+    bottom: 40%;
   }
-  .containermobile a {
-      color: white;
-      margin-right: 10px;
+  .text-block p {
+    text-align: left;
+    color: white;
   }
-  .buildingcon {
-    display: none;
+  #buildimg {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9710px;
+    margin: auto;
+  }
+}
+
+@media only screen
+and (max-width: 321px)
+{
+  .text-block {
+    bottom: 0%;
+    left: 20px;
+    font-size: 0.84em;
+    margin-bottom: 40%;
   }
 }

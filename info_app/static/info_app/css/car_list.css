@@ -19,3 +19,19 @@ a .w3-image{
 #carlist{
   margin-top: 30px;
 }
+
+@media only screen
+and (max-width: 1000px)
+{
+  .w3-display-bottomleft {
+    font-size: 0.85em;
+  }
+}
+
+@media only screen
+and (max-width: 760px)
+{
+  .w3-display-bottomleft {
+    font-size: 1em;
+  }
+}

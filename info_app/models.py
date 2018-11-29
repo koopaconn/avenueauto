@@ -8,8 +8,11 @@ class model_cars(models.Model):
     year = models.CharField(max_length=128)
     price = models.CharField(max_length=128)
     mileage = models.CharField(max_length=128)
-    color = models.CharField(max_length=128)
     engine = models.CharField(max_length=128)
+    transmission = models.CharField(max_length=128)
+    vin = models.CharField(max_length=128)
+    MSRP = models.CharField(max_length=128)
+    savings = models.CharField(max_length=128)
     moreinfo = models.CharField(max_length=512)
     headpic = models.ImageField()
 
