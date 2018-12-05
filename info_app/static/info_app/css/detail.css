@@ -2,6 +2,11 @@
   margin-top: 20px;
 }
 
+/* #pricelist {
+  list-style-type:none;
+  margin-bottom: 30px;
+} */
+
 #cardetailspan ul{
   vertical-align: text-top;
   list-style-type:none;

@@ -1,7 +1,5 @@
 
 html,body {
-    width: 100%;
-    height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
@@ -27,16 +25,17 @@ nav {
   color: black;
   margin: auto;
   margin-left: 20px;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .dropdown-menu{
-    width: 350px !important;
+    width: 470px !important;
+    height: 240px;
 }
 
 #fblogo img{
-  width: 3em;
-  height: 3em;
+  width: 4.5em;
+  height: 4.5em;
   display: block;
   margin-left: 20px;
   margin-top: 5%;

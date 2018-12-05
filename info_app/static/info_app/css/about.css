@@ -1,13 +1,29 @@
-.col-md-3 img{
-  display: flex;
-  height: auto;
-  width: inherit;
-  margin: inherit;
+.col-md-5 {
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
   border: 2px solid #0B1B32;
+}
+
+.col-md-5 img{
+  height: 100%;
+  width: auto;
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9800px;
+  margin: auto;
 }
 
 #mech{
   text-align: center;
+}
+
+.col-md-4 img {
+  width: 60%;
+  height: auto;
+  margin-left: 5px;
 }
 
 iframe{

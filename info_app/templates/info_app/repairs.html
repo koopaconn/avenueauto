@@ -13,25 +13,33 @@ Avenue Auto - Repairs
 
 <div class="container">
   <!-- <div class="jumbotron"> -->
-    <p class="custlead" style="padding-top:5%;">We do it all!  Welcome to Avenue auto your one-stop, on-the-spot auto service headquarters for a complete line of quality services and auto repair. We have provided St Joseph with the best products and unprecedented services for everything we do.
-    <br>At Avenue Auto our technicians are qualified to work on domestic and import vehicles, and can handle just about any auto repair. In fact, we’ve often been able to diagnose and fix issues that other auto repair shops could not.
+    <p class="custlead" style="padding-top:5%;">We do it all!  Welcome to <span id='aaspan'>Avenue Auto</span> your one-stop, on-the-spot auto service headquarters for a complete line of quality services and auto repair. We have provided St Joseph with the best products and unprecedented services for everything we do.
+    <br>At <span id='aaspan'>Avenue Auto</span> our technicians are qualified to work on domestic and import vehicles, and can handle just about any auto repair. In fact, we’ve often been able to diagnose and fix issues that other auto repair shops could not.
     <br>And since 2003, our customers have been coming back over and over again. Come fine out why.</p>
-    <h3>The Extra Mile</h3>
-    <p class="custlead">Our 12 month, 12,000 mile Warranty</p>
-    <img src="{% static 'info_app/images/warranty.jpg' %}" alt="" id="warranty">
-    <p class="custlead" style="padding-bottom:5%;">We are a certified O’Reilly Auto Repair Center, which means all of our repairs and services will be covered by a 12 month, 12,000 mile warranty (or more). You can be confident we have you covered, here in our town and nationwide.</p>
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="{% static 'info_app/images/certfiedautorepair.png' %}" id="warranty">
+        </div>
+        <div class="col-md-8">
+          <h3>The Extra Mile | <span>Our 12 month, 12,000 mile Warranty</span></h3>
+          <p class="custlead"></p><br>
+          <p class="custlead" style="padding-bottom:5%;">We are a certified O’Reilly Auto Repair Center, which means all of our repairs and services will be covered by a 12 month, 12,000 mile warranty (or more). You can be confident we have you covered, here in our town and nationwide.</p>
+        </div>
+      </div>
+    </div>
     <div class="row">
       <div class="col-md-3 col-6">
           <img src="{% static 'info_app/images/rep_strut.jpg' %}" alt="">
-          <h2>Struts</h2>
+          <h2>Struts and Shocks</h2>
       </div>
       <div class="col-md-3 col-6">
           <img src="{% static 'info_app/images/rep_battery.jpg' %}" alt="">
-          <h2>Batteries</h2>
+          <h2>Batteries and Electrical</h2>
       </div>
       <div class="col-md-3 col-6">
           <img src="{% static 'info_app/images/rep_electric.jpg' %}" alt="">
-          <h2>Fuses, electrical, and insturment clusters</h2>
+          <h2>Diagnostics</h2>
       </div>
       <div class="col-md-3 col-6">
           <img src="{% static 'info_app/images/rep_tune.jpg' %}" alt="">
@@ -41,11 +49,11 @@ Avenue Auto - Repairs
     <div class="row" style="margin-bottom:30px;">
       <div class="col-md-3 col-6">
           <img src="{% static 'info_app/images/rep_AC.jpg' %}" alt="">
-          <h2>AC Systems</h2>
+          <h2>Air Conditioning Systems</h2>
       </div>
       <div class="col-md-3 col-6">
           <img src="{% static 'info_app/images/rep_inspec.jpg' %}" alt="">
-          <h2>State Inspections</h2>
+          <h2>Steering</h2>
       </div>
       <div class="col-md-3 col-6">
           <img src="{% static 'info_app/images/rep_suspension.jpg' %}" alt="">
@@ -53,7 +61,7 @@ Avenue Auto - Repairs
       </div>
       <div class="col-md-3 col-6">
           <img src="{% static 'info_app/images/rep_engine.jpg' %}" alt="">
-          <h2>Engine Replacements</h2>
+          <h2>Engine and Transmission Replacements</h2>
       </div>
     </div>
 </div>

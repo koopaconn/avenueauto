@@ -13,24 +13,24 @@ Avenue Auto - Inventory
 
 <div class="container">
   <div class="jumbotron">
-    <h2>Details:</h2>
+    <h2><strong>Details:</strong></h2>
     <p></p>
     <span id='cardetailspan'>
       <ul>
         <li><strong>Make:</strong> {{car_details.make}}</li>
         <li><strong>Model:</strong> {{car_details.model}}</li>
-        <li><strong>Engine:</strong> {{car_details.engine}}</li>
-        <li><strong>Transmission:</strong> {{car_details.transmission}}</li>
-      </ul>
-      <ul>
         <li><strong>Year:</strong> {{car_details.year}}</li>
         <li><strong>Mileage:</strong> {{car_details.mileage}}</li>
-        <li><strong>Vin:</strong> {{car_details.vin}}</li>
-        <li><strong>Warranty:</strong> 6 months or 6,000 miles</li>
       </ul>
       <ul>
-        <li><strong>MRSP:</strong> {{car_details.MSRP}}</li>
-        <li><strong>Sale Price:</strong> {{car_details.price}}</li>
+        <li><strong>Engine:</strong> {{car_details.engine}}</li>
+        <li><strong>Transmission:</strong> {{car_details.transmission}}</li>
+        <li><strong>Vin:</strong> {{car_details.vin}}</li>
+      </ul>
+      <ul id="pricelist">
+        <li><strong>Warranty:</strong> 6 months or 6,000 miles</li>
+        <li><strong>MSRP:</strong> {{car_details.MSRP}}</li>
+        <li style="font-size:1.5em;color:green;"><strong>Sale Price:</strong> {{car_details.price}}</li>
         <li><strong>Savings:</strong> {{car_details.savings}}</li>
       </ul>
     </span>
