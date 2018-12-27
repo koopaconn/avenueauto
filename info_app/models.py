@@ -13,7 +13,7 @@ class model_cars(models.Model):
     vin = models.CharField(max_length=128)
     MSRP = models.CharField(max_length=128)
     savings = models.CharField(max_length=128)
-    moreinfo = models.CharField(max_length=512)
+    moreinfo = models.TextField(max_length=2048)
     headpic = models.ImageField()
 
     def __str__(self):

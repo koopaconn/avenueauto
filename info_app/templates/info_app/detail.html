@@ -34,7 +34,9 @@ Avenue Auto - Inventory
         <li><strong>Savings:</strong> {{car_details.savings}}</li>
       </ul>
     </span>
-    <p><strong>Features:</strong> {{car_details.moreinfo}}</p>
+    <p><strong>Features and trim level:</strong></p>
+    <p>{{car_details.moreinfo|linebreaks}}</p>
+    <p><b>The {{car_details.make}} {{car_details.model}} is backed by a 6-month or 6,000 mile warranty.</b></p>
 
   </div>
 </div>
