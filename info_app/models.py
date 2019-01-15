@@ -25,3 +25,5 @@ class model_cars(models.Model):
 class model_carspic(models.Model):
     pic = models.ImageField()
     car = models.ForeignKey(model_cars,models.CASCADE,related_name='carpic')
+    def __str__(self):
+            return str(self.car)
